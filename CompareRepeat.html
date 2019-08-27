@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>文字去重</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="CompareRepeat.css">
+</head>
+<body>
+	<div id="tabBarTest">文字去重</div>
+	<div id="tabBar">
+		<button id="back">返回</button>
+		<button id="submit">提交</button>
+		<button id="switch" class="switchOff">切换</button>
+		<button id="copy">拷贝</button>
+		<label for="inputSeparator" class="customText">输入分隔符:</label>
+		<input id="inputSeparator" class="custom" value=" ">
+		<br>
+		<label for="outputSeparator" class="customText">输出分隔符:</label>
+		<input id="outputSeparator" class="custom" value=" ">
+	</div>
+	
+	<div style="display: inline-block">
+		<label for="input1">输入文字</label>
+		<br>
+		<textarea id="input1"></textarea>
+	</div>
+	<div style="display: inline-block">
+		<label id="input2Label" for="input2" style="display: none">比对文字</label>
+		<br>
+		<textarea id="input2" style="display: none"></textarea>
+	</div>
+	<br>
+	<div style="display: inline-block">
+		<label for="output">输出文字</label>
+		<br>
+		<textarea id="output" disabled></textarea>
+	</div>
+	<div style="display: inline-block" class="detail">
+		<label for="behaviorLog">比对详情</label>
+		<br>
+		<textarea id="behaviorLog" disabled></textarea>
+	</div>
+	<div style="display: inline-block" class="detail">
+		<label for="repeatLog">重复内容</label>
+		<br>
+		<textarea id="repeatLog" disabled></textarea>
+	</div>
+	
+	<script type="module" src="CompareRepeat.js"></script>
+</body>
+</html>
