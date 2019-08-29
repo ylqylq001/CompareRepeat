@@ -17,21 +17,25 @@ body{
 	box-shadow: 0 0 10px gray;
 }
 
-.custom{
-	width: 75px;
-	height: 15px;
+#custom{
+	width: 150px;
 	float: left;
+}
+#custom>input{
+	width: 50px;
+	height: 15px;
+	margin-top: 2px;
 	text-align: center;
+	vertical-align: top;
 	outline: none;
 	border-style: none;
-	border-radius: 10px;
+	border-radius: 5px;
 }
-.customText{
+#custom>label{
 	width: 100px;
-	height: 20px;
-	float: left;
 	font-size: 15px;
 	line-height: 25px;
+	vertical-align: top;
 }
 
 label{
