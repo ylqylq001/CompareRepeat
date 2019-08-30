@@ -1,8 +1,8 @@
-export default function (input,separator) {
+export default (input,separator)=>{
 	let oldString=input.value.split(separator);
 	let newString=[];
 	let outputLog=[];
-	outputLog.push("检测"+input.getAttribute("id")+"输入栏：");
+	outputLog.push("检测输入栏：");
 	oldString.forEach(function (item,index) {
 		if (item==="") {
 			outputLog.push("数组"+index+"是空数组");

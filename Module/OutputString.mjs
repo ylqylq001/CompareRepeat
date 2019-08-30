@@ -1,4 +1,4 @@
-export default function (oldString1,oldString2,newString1,newString2,compareString) {
+export default (oldString1,oldString2,newString1,newString2,compareString)=>{
 	let repeatLog=[];
 	let repeatNumber1=0;
 	let repeatNumber2=0;
@@ -14,11 +14,11 @@ export default function (oldString1,oldString2,newString1,newString2,compareStri
 	}
 	
 	let behaviorLog=oldString1.output;
-	repeatLog.push("检测input1自身重复：");
+	repeatLog.push("检测自身重复：");
 	pushLog(newString1,repeatNumber1);
 	
 	behaviorLog=behaviorLog.concat(oldString2.output);
-	repeatLog.push("检测input2自身重复：");
+	repeatLog.push("检测自身重复：");
 	pushLog(newString2,repeatNumber2);
 	
 	behaviorLog.push("检测对比重复：");

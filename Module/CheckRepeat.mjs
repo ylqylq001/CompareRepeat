@@ -1,4 +1,4 @@
-export default function (string) {
+export default (string)=>{
 	let oldString=string.string;
 	let newString=[];
 	oldString.forEach(function (oldItem) {

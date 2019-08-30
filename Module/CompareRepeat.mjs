@@ -1,4 +1,4 @@
-export default function (string1,string2) {
+export default (string1,string2)=>{
 	let oldString=[];
 	let newString=[];
 	let repeatString=[];
