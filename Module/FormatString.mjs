@@ -1,5 +1,5 @@
 export default (input,separator)=>{
-	let oldString=input.value.split(separator);
+	let oldString=input.split(separator);
 	let newString=[];
 	let outputLog=[];
 	outputLog.push("检测输入栏：");
