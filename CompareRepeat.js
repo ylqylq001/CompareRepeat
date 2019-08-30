@@ -23,11 +23,7 @@ new Vue({
 			let newString2=CheckRepeat(oldString2);
 			let compareString=CompareRepeat(newString1,newString2);
 			let outputString=OutputString(oldString1,oldString2,newString1,newString2,compareString);
-			if (this.compareInput==="") {
-				this.output=compareString.oldString.join(this.outputSeparator);
-			}else{
-				this.output=compareString.newString.join(this.outputSeparator);
-			}
+			this.output=compareString.newString.join(this.outputSeparator);
 			this.behavior=outputString.behaviorLog.join("\n");
 			this.repeat=outputString.repeatLog.join("\n");
 		},

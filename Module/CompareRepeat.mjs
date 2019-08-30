@@ -1,10 +1,6 @@
 export default (string1,string2)=>{
-	let oldString=[];
 	let newString=[];
 	let repeatString=[];
-	string1.forEach(function (item) {
-		oldString.push(item.name);
-	});
 	string1.forEach(function (item1) {
 		string2.forEach(function (item2) {
 			if (item1.name===item2.name) {
@@ -13,7 +9,9 @@ export default (string1,string2)=>{
 		})
 	});
 	if (repeatString.length===0) {
-		newString=oldString;
+		string1.forEach(function (item) {
+			newString.push(item.name);
+		});
 	}else{
 		string1.forEach(function (item) {
 			for (let i=0;i<repeatString.length;i++) {
@@ -25,7 +23,6 @@ export default (string1,string2)=>{
 		});
 	}
 	return {
-		oldString: oldString,
 		newString: newString,
 		repeatString: repeatString
 	};
